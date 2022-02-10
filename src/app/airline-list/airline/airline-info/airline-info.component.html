@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <a routerLink="" class="kayak-orange body-text">< Back to list</a>
+
+  <div *ngIf="airlineData" class="info-wrapper">
+    <div>
+      <p class="body-text">{{airlineData.name + airlineCode}}</p>
+      <p class="body-text">{{airlineData.phone}}</p>
+      <p class="kayak-orange body-text">{{airlineData.site | url}}</p>
+    </div>
+    <div>
+      <img [src]="imageRoot + airlineData.logoURL" alt="" class="image">
+    </div>
+  </div>
+
+  <p class="kayak-orange status-string body-text">Check flight status</p>
+  <div class="search-wrapper">
+    <form action="">
+      <div class="input-box">
+        <mat-form-field hideRequiredMarker>
+          <mat-label></mat-label>
+          <input matInput class="input body-text" placeholder="{{placeholder}}" [formControl]="flightNumber" required/>
+          <mat-error *ngIf="flightNumber.invalid" class="error-msg">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="btn-wrapper">
+        <button mat-flat-button (click)="checkFlight()" class="check-btn body-text">Check</button>
+      </div>
+    </form>
+
+  </div>
+
+</div>

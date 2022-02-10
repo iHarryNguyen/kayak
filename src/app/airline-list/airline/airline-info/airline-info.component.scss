@@ -1,0 +1,97 @@
+@import "src/sass/variables";
+@import "src/sass/bootstrap_config";
+
+.wrapper {
+  padding: 10px 20px;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.image {
+  float: right;
+  height: 50px;
+  -webkit-animation:spin 1s linear;
+  -moz-animation:spin 1s linear;
+  animation:spin 1s linear;
+}
+
+.kayak-orange {
+  color: $kayak-orange;
+}
+
+.status-string {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.search-wrapper {
+  width: 100%;
+
+  div.btn-wrapper {
+    padding-top: 0px;
+  }
+}
+
+.placeholder {
+  color: $kayak-gray;
+}
+
+.input-box {
+  border: 1px solid $kayak-gray;
+  border-radius: 25px;
+  float: left;
+  width: 70%;
+}
+
+.input {
+  padding-left: 10px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.check-btn {
+  background-color: $kayak-orange;
+  color: white;
+  border-radius: 15px;
+  width: 25%;
+  height: 30px;
+  line-height: 0;
+  margin-left: 10px;
+}
+
+.body-text {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+}
+
+.error-msg {
+  color: red;
+}
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $kayak-orange;
+}
+
+p {
+  margin: 0;
+}

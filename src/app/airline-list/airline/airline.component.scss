@@ -1,0 +1,33 @@
+@import "src/sass/variables";
+@import "src/sass/bootstrap_config";
+@import "src/sass/typography";
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.list-container {
+  background-color: $kayak-gray;
+  border-bottom: 1px solid darkgray;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  margin-right: 25px;
+}
+
+.body-text {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: $global-color;
+}

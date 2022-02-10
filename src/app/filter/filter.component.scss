@@ -1,0 +1,16 @@
+@import "src/sass/variables";
+@import "src/sass/bootstrap_config";
+
+.wrapper {
+  padding: 20px 30px;
+}
+
+.filter {
+  border: 1px solid $kayak-gray;
+  border-radius: 15px;
+  height: 30px;
+}
+
+mat-form-field {
+  width: 100%;
+}

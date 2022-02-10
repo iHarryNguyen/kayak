@@ -1,0 +1,19 @@
+@import "src/sass/variables";
+@import "src/sass/bootstrap_config";
+
+.wrapper {
+  background-color: $kayak-black;
+  height: 75px;
+}
+
+.svg-wrapper {
+  height: 100%;
+}
+
+
+
+mat-icon {
+  padding-left: 20px !important;
+  width: 250px;
+  height: 70px;
+}
